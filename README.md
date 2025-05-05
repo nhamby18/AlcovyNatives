@@ -1,54 +1,103 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plants for Sale - Alcovy Natives</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { 
+      font-family: 'Arial', sans-serif; 
+      background-color: #2F4F2F; /* Forest green background */
+    }
+    .bg-forest-green { background-color: #2F4F2F; }
+    .border-red { border-color: #FF0000; }
+    .text-red { color: #FF0000; }
+    .hover\:bg-red:hover { background-color: #FF0000; }
+    .hover\:text-red:hover { color: #FF0000; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-forest-green text-white sticky top-0 z-50 border-b-2 border-red">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center">
+        <img src="images/logo.png" alt="Alcovy Natives Logo" class="h-12 mr-4">
+        <h1 class="text-2xl font-bold">Alcovy Natives</h1>
+      </div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-red">Home</a></li>
+          <li><a href="#about" class="hover:text-red">About</a></li>
+          <li><a href="plants.html" class="hover:text-red">Plants</a></li>
+          <li><a href="#calendar" class="hover:text-red">Calendar</a></li>
+          <li><a href="#contact" class="hover:text-red">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+  <!-- Plants Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Plants for Sale</h2>
+      <p class="text-lg text-center mb-8">Discover our native Georgia plants, perfect for sustainable gardens!</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Plant 1: Black-eyed Susan -->
+        <div class="bg-gray-50 p-6 rounded shadow hover:shadow-lg border-2 border-red">
+          <!-- Image downloaded from NC State (with permission) and hosted locally -->
+          <!-- Original URL: https://plants.ces.ncsu.edu/media/images/Rudbeckia_hirta_001.jpg -->
+          <img src="images/rudbeckia_hirta.jpg" alt="Black-eyed Susan" class="w-full h-48 object-cover rounded mb-4 border-2 border-red">
+          <h3 class="text-xl font-semibold mb-2">Black-eyed Susan</h3>
+          <p class="text-gray-600 mb-4">Bright yellow daisy-like flowers, ideal for pollinator gardens.</p>
+          <a href="plant-detail.html" class="bg-forest-green text-white px-4 py-2 rounded border-2 border-red hover:bg-red">View Details</a>
+        </div>
+        <!-- Plant 2: Swamp Milkweed -->
+        <div class="bg-gray-50 p-6 rounded shadow hover:shadow-lg border-2 border-red">
+          <!-- Image downloaded from NC State (with permission) and hosted locally -->
+          <!-- Original URL: https://plants.ces.ncsu.edu/media/images/Asclepias_incarnata_002.jpg -->
+          <img src="images/asclepias_incarnata.jpg" alt="Swamp Milkweed" class="w-full h-48 object-cover rounded mb-4 border-2 border-red">
+          <h3 class="text-xl font-semibold mb-2">Swamp Milkweed</h3>
+          <p class="text-gray-600 mb-4">Pink blooms that support monarch butterflies.</p>
+          <a href="plant-detail.html" class="bg-forest-green text-white px-4 py-2 rounded border-2 border-red hover:bg-red">View Details</a>
+        </div>
+        <!-- Plant 3: Georgia Aster -->
+        <div class="bg-gray-50 p-6 rounded shadow hover:shadow-lg border-2 border-red">
+          <!-- Image downloaded from NC State (with permission) and hosted locally -->
+          <!-- Original URL: https://plants.ces.ncsu.edu/media/images/Symphyotrichum_georgianum_001.jpg -->
+          <img src="images/symphyotrichum_georgianum.jpg" alt="Georgia Aster" class="w-full h-48 object-cover rounded mb-4 border-2 border-red">
+          <h3 class="text-xl font-semibold mb-2">Georgia Aster</h3>
+          <p class="text-gray-600 mb-4">Purple fall blooms for late-season color.</p>
+          <a href="plant-detail.html" class="bg-forest-green text-white px-4 py-2 rounded border-2 border-red hover:bg-red">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-# GitHub Pages
+  <!-- Footer -->
+  <footer class="bg-forest-green text-white p-6 border-t-2 border-red">
+    <div class="container mx-auto text-center">
+      <p class="mb-2">Alcovy Natives | 123 Main St, Your City, GA 12345</p>
+      <p class="mb-2">Email: info@alcovynatives.org | Phone: (123) 456-7890</p>
+      <div class="flex justify-center space-x-4 mb-2">
+        <a href="#" class="hover:text-red">Facebook</a>
+        <a href="#" class="hover:text-red">Twitter</a>
+        <a href="#" class="hover:text-red">Instagram</a>
+      </div>
+      <p>Accredited by Cognia | Images courtesy of NC State Extension Plants Database</p>
+    </div>
+  </footer>
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
-
-</header>
-
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
-
-## Step 1: Enable GitHub Pages
-
-_Welcome to GitHub Pages and Jekyll :tada:!_
-
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
-
-### :keyboard: Activity: Enable GitHub Pages
-
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
